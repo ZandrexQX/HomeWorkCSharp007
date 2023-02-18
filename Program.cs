@@ -1,219 +1,219 @@
-﻿// Console.Clear();
-// Console.WriteLine("Task 47");
-// Console.WriteLine("------");
+﻿Console.Clear();
+Console.WriteLine("Task 47");
+Console.WriteLine("------");
 
-// void InputMatrixDouble(double[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             matrix[i, j] = Math.Round(new Random().NextDouble()*20-10,2);
-//     }
-// }
+void InputMatrixDouble(double[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            matrix[i, j] = Math.Round(new Random().NextDouble()*20-10,2);
+    }
+}
 
-// void PrintMatrixDouble(double[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             Console.Write($"{matrix[i, j]} \t");
-//         Console.WriteLine();
-//     }
-// }
+void PrintMatrixDouble(double[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            Console.Write($"{matrix[i, j]} \t");
+        Console.WriteLine();
+    }
+}
 
-// Console.Write("Введите размер массива: ");
-// int[] size1 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
-// double[,] matrixDouble = new double[size1[0], size1[1]];
-// InputMatrixDouble(matrixDouble);
-// PrintMatrixDouble(matrixDouble);
+Console.Write("Введите размер массива: ");
+int[] size1 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+double[,] matrixDouble = new double[size1[0], size1[1]];
+InputMatrixDouble(matrixDouble);
+PrintMatrixDouble(matrixDouble);
 
-// Console.ReadLine();
+Console.ReadLine();
 
-// /*--------------------------------------------*/
+/*--------------------------------------------*/
 
-// Console.Clear();
-// Console.WriteLine("Task 50");
-// Console.WriteLine("------");
+Console.Clear();
+Console.WriteLine("Task 50");
+Console.WriteLine("------");
 
-// void InputMatrixInt1(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             matrix[i, j] = new Random().Next(1,10);
-//     }
-// }
+void InputMatrixInt1(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            matrix[i, j] = new Random().Next(1,10);
+    }
+}
 
-// void PrintMatrixInt1(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             Console.Write($"{matrix[i, j]} \t");
-//         Console.WriteLine();
-//     }
-// }
+void PrintMatrixInt1(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            Console.Write($"{matrix[i, j]} \t");
+        Console.WriteLine();
+    }
+}
 
-// Console.Write("Введите размер массива: ");
-// int[] size2 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
-// int[,] matrix1 = new int[size2[0], size2[1]];
-// InputMatrixInt1(matrix1);
-// PrintMatrixInt1(matrix1);
+Console.Write("Введите размер массива: ");
+int[] size2 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+int[,] matrix1 = new int[size2[0], size2[1]];
+InputMatrixInt1(matrix1);
+PrintMatrixInt1(matrix1);
 
-// Console.Write("Введите позицию массива: ");
-// int[] pos = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+Console.Write("Введите позицию массива: ");
+int[] pos = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
 
-// if(pos[0]<matrix1.GetLength(0) && pos[1]<matrix1.GetLength(1))
-//     Console.WriteLine($"На данной позиции элемент: {matrix1[pos[0],pos[1]]}");
-// else Console.WriteLine("Такой позиции нет");
+if(pos[0]<matrix1.GetLength(0) && pos[1]<matrix1.GetLength(1))
+    Console.WriteLine($"На данной позиции элемент: {matrix1[pos[0],pos[1]]}");
+else Console.WriteLine("Такой позиции нет");
 
-// Console.ReadLine();
+Console.ReadLine();
 
-// /*--------------------------------------------*/
+/*--------------------------------------------*/
 
-// Console.Clear();
-// Console.WriteLine("Task 52");
-// Console.WriteLine("------");
+Console.Clear();
+Console.WriteLine("Task 52");
+Console.WriteLine("------");
 
-// void InputMatrixInt2(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             matrix[i, j] = new Random().Next(1,10);
-//     }
-// }
+void InputMatrixInt2(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            matrix[i, j] = new Random().Next(1,10);
+    }
+}
 
-// void PrintMatrixInt2(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             Console.Write($"{matrix[i, j]} \t");
-//         Console.WriteLine();
-//     }
-// }
+void PrintMatrixInt2(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            Console.Write($"{matrix[i, j]} \t");
+        Console.WriteLine();
+    }
+}
 
-// void ArithMean(int [,] matrix){
-//     Console.WriteLine("Среднее арифметическое каждого столбца: ");
-//     for (int i = 0; i < matrix.GetLength(1); i++)
-//     {
-//         double arith = 0;
-//         for (int j = 0; j < matrix.GetLength(0); j++){
-//             arith += (double)matrix[j,i]/matrix.GetLength(0);
-//         }
-//         Console.Write($"{Math.Round(arith,1)} \t");    
-//     }
-// }
+void ArithMean(int [,] matrix){
+    Console.WriteLine("Среднее арифметическое каждого столбца: ");
+    for (int i = 0; i < matrix.GetLength(1); i++)
+    {
+        double arith = 0;
+        for (int j = 0; j < matrix.GetLength(0); j++){
+            arith += (double)matrix[j,i]/matrix.GetLength(0);
+        }
+        Console.Write($"{Math.Round(arith,1)} \t");    
+    }
+}
 
-// Console.Write("Введите размер массива: ");
-// int[] size3 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
-// int[,] matrix2 = new int[size3[0], size3[1]];
-// InputMatrixInt2(matrix2);
-// PrintMatrixInt2(matrix2);
-// ArithMean(matrix2);
+Console.Write("Введите размер массива: ");
+int[] size3 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+int[,] matrix2 = new int[size3[0], size3[1]];
+InputMatrixInt2(matrix2);
+PrintMatrixInt2(matrix2);
+ArithMean(matrix2);
 
-// Console.ReadLine();
+Console.ReadLine();
 
-// /*--------------------------------------------*/
+/*--------------------------------------------*/
 
-// Console.Clear();
-// Console.WriteLine("Task Add 1");
-// Console.WriteLine("------");
+Console.Clear();
+Console.WriteLine("Task Add 1");
+Console.WriteLine("------");
 
-// void InputMatrixInt3(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             matrix[i, j] = new Random().Next(1,100);
-//     }
-// }
+void InputMatrixInt3(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            matrix[i, j] = new Random().Next(1,100);
+    }
+}
 
-// void PrintMatrixInt3(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             Console.Write($"{matrix[i, j]} \t");
-//         Console.WriteLine();
-//     }
-// }
+void PrintMatrixInt3(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            Console.Write($"{matrix[i, j]} \t");
+        Console.WriteLine();
+    }
+}
 
-// void TranMatrix(int [,] matrix){
-//     for (int i = 0; i < matrix.GetLength(0)/2; i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++){
-//             int temp = matrix[i,j];
-//             matrix[i,j] = matrix[matrix.GetLength(0)-1-i,j];
-//             matrix[matrix.GetLength(0)-1-i,j] = temp;
-//         }       
-//     }
-// }
+void TranMatrix(int [,] matrix){
+    for (int i = 0; i < matrix.GetLength(0)/2; i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++){
+            int temp = matrix[i,j];
+            matrix[i,j] = matrix[matrix.GetLength(0)-1-i,j];
+            matrix[matrix.GetLength(0)-1-i,j] = temp;
+        }       
+    }
+}
 
-// Console.Write("Введите размер массива: ");
-// int[] size4 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
-// int[,] matrix3 = new int[size4[0], size4[1]];
-// InputMatrixInt3(matrix3);
-// PrintMatrixInt3(matrix3);
-// Console.WriteLine("Транспонирование по горизонтали");
-// TranMatrix(matrix3);
-// PrintMatrixInt3(matrix3);
-// Console.ReadLine();
+Console.Write("Введите размер массива: ");
+int[] size4 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+int[,] matrix3 = new int[size4[0], size4[1]];
+InputMatrixInt3(matrix3);
+PrintMatrixInt3(matrix3);
+Console.WriteLine("Транспонирование по горизонтали");
+TranMatrix(matrix3);
+PrintMatrixInt3(matrix3);
+Console.ReadLine();
 
-// /*--------------------------------------------*/
+/*--------------------------------------------*/
 
-// Console.Clear();
-// Console.WriteLine("Task Add 2");
-// Console.WriteLine("------");
+Console.Clear();
+Console.WriteLine("Task Add 2");
+Console.WriteLine("------");
 
-// void InputMatrixWB(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//             matrix[i, j] = new Random().Next(0,2);
-//     }
-// }
+void InputMatrixWB(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+            matrix[i, j] = new Random().Next(0,2);
+    }
+}
 
-// void PrintMatrixWB(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++){
-//             if(matrix[i,j] == 0) Console.Write("W");
-//             else Console.Write("B");
-//         }
-//         Console.WriteLine();
-//     }
-// }
+void PrintMatrixWB(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++){
+            if(matrix[i,j] == 0) Console.Write("W");
+            else Console.Write("B");
+        }
+        Console.WriteLine();
+    }
+}
 
-// void CompMatrix(int [,] matrix1, int [,] matrix2){
-//     int count = 0;
-//     for (int i = 0; i < matrix1.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix1.GetLength(1); j++){
-//             if(matrix1[i,j] == matrix2[i,j]) count++;
-//         }       
-//     }
-//     Console.WriteLine(count);
-// }
+void CompMatrix(int [,] matrix1, int [,] matrix2){
+    int count = 0;
+    for (int i = 0; i < matrix1.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix1.GetLength(1); j++){
+            if(matrix1[i,j] == matrix2[i,j]) count++;
+        }       
+    }
+    Console.WriteLine(count);
+}
 
-// Console.Write("Введите размер массива: ");
-// int[] size5 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
-// int[,] matrixWB1 = new int[size5[0], size5[1]];
-// int[,] matrixWB2 = new int[size5[0], size5[1]];
+Console.Write("Введите размер массива: ");
+int[] size5 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+int[,] matrixWB1 = new int[size5[0], size5[1]];
+int[,] matrixWB2 = new int[size5[0], size5[1]];
 
-// InputMatrixWB(matrixWB1);
-// InputMatrixWB(matrixWB2);
-// PrintMatrixWB(matrixWB1);
-// Console.WriteLine();
-// PrintMatrixWB(matrixWB2);
-// Console.Write("Ошибок в негативе: ");
-// CompMatrix(matrixWB1, matrixWB2);
-// Console.ReadLine();
+InputMatrixWB(matrixWB1);
+InputMatrixWB(matrixWB2);
+PrintMatrixWB(matrixWB1);
+Console.WriteLine();
+PrintMatrixWB(matrixWB2);
+Console.Write("Ошибок в негативе: ");
+CompMatrix(matrixWB1, matrixWB2);
+Console.ReadLine();
 
-// /*--------------------------------------------*/
+/*--------------------------------------------*/
 
 Console.Clear();
 Console.WriteLine("Task Add 3");
@@ -221,24 +221,35 @@ Console.WriteLine("------");
 
 void InputMatrixInt4(int[,] matrix)
 {
-    int count = 0, sumXY = 0, x = 0, y = 0;
-    for (int i = 0; i < matrix.GetLength(0)*matrix.GetLength(1); i++)
+    int count = 0, sumXY = 1, x = 0, y = 0;
+    for (int i = 0; i < matrix.GetLength(0)*matrix.GetLength(1)-1; i++)
     {
-        if(sumXY >= matrix.GetLength(0) && x == 0) x = sumXY-matrix.GetLength(0)+1;
-        y = sumXY-x;
-        Console.WriteLine(sumXY);
-        Console.WriteLine(x);
-        Console.WriteLine(y);
-        if(y>=matrix.GetLength(1)) y = sumXY-matrix.GetLength(1)-x;
-        matrix[x,y] = count;
-        if (x >= sumXY) {
-            sumXY++;
-            x = 0;
-        }
-        else if (x < matrix.GetLength(0)-1) x++;
         count++;
+        y = sumXY-x;
+        // Console.Write($"x = {x} ");
+        // Console.Write($"y = {y} ");
+        // Console.WriteLine();
+        
+        if (x < matrix.GetLength(0) && y < matrix.GetLength(1))
+            matrix[x,y] = count;
+        if(y == 0){
+            x = 0;
+            sumXY++;
+            y = sumXY;
+            if (y > matrix.GetLength(1)-1){
+                y = matrix.GetLength(1)-1;
+                x = sumXY - y;
+            }
+        }
+        else x++;
+        if(x > matrix.GetLength(0)-1){
+            y = matrix.GetLength(1)-1;
+            sumXY++;
+            x = sumXY-y;
+        }
     }
 }
+
 
 void PrintMatrixInt4(int[,] matrix)
 {
@@ -254,6 +265,8 @@ Console.Write("Введите размер массива: ");
 int[] size6 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
 int[,] matrix4 = new int[size6[0], size6[1]];
 InputMatrixInt4(matrix4);
+Console.WriteLine();
+Console.WriteLine();
 PrintMatrixInt4(matrix4);
 
 Console.ReadLine();
