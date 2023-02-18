@@ -71,20 +71,66 @@
 
 // /*--------------------------------------------*/
 
+// Console.Clear();
+// Console.WriteLine("Task 52");
+// Console.WriteLine("------");
+
+// void InputMatrixInt2(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//             matrix[i, j] = new Random().Next(1,10);
+//     }
+// }
+
+// void PrintMatrixInt2(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//             Console.Write($"{matrix[i, j]} \t");
+//         Console.WriteLine();
+//     }
+// }
+
+// void ArithMean(int [,] matrix){
+//     Console.Write("Среднее арифметическое каждого столбца: ");
+//     for (int i = 0; i < matrix.GetLength(1); i++)
+//     {
+//         double arith = 0;
+//         for (int j = 0; j < matrix.GetLength(0); j++){
+//             arith += (double)matrix[j,i]/matrix.GetLength(0);
+//         }
+//         Console.Write($"{Math.Round(arith,1)} ");    
+//     }
+// }
+
+// Console.Write("Введите размер массива: ");
+// int[] size3 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+// int[,] matrix2 = new int[size3[0], size3[1]];
+// InputMatrixInt2(matrix2);
+// PrintMatrixInt2(matrix2);
+// ArithMean(matrix2);
+
+// Console.ReadLine();
+
+// /*--------------------------------------------*/
+
 Console.Clear();
-Console.WriteLine("Task 52");
+Console.WriteLine("Task Add 1");
 Console.WriteLine("------");
 
-void InputMatrixInt2(int[,] matrix)
+void InputMatrixInt3(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
-            matrix[i, j] = new Random().Next(1,10);
+            matrix[i, j] = new Random().Next(1,100);
     }
 }
 
-void PrintMatrixInt2(int[,] matrix)
+void PrintMatrixInt3(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
@@ -94,25 +140,25 @@ void PrintMatrixInt2(int[,] matrix)
     }
 }
 
-void ArithMean(int [,] matrix){
-    Console.Write("Среднее арифметическое каждого столбца: ");
-    for (int i = 0; i < matrix.GetLength(1); i++)
+void TranMatrix(int [,] matrix){
+    for (int i = 0; i < matrix.GetLength(0)/2; i++)
     {
-        double arith = 0;
-        for (int j = 0; j < matrix.GetLength(0); j++){
-            arith += (double)matrix[j,i]/matrix.GetLength(0);
-        }
-        Console.Write($"{Math.Round(arith,1)} ");    
+        for (int j = 0; j < matrix.GetLength(1); j++){
+            int temp = matrix[i,j];
+            matrix[i,j] = matrix[matrix.GetLength(0)-1-i,j];
+            matrix[matrix.GetLength(0)-1-i,j] = temp;
+        }       
     }
 }
 
 Console.Write("Введите размер массива: ");
-int[] size3 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
-int[,] matrix2 = new int[size3[0], size3[1]];
-InputMatrixInt2(matrix2);
-PrintMatrixInt2(matrix2);
-ArithMean(matrix2);
-
+int[] size4 = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+int[,] matrix3 = new int[size4[0], size4[1]];
+InputMatrixInt3(matrix3);
+PrintMatrixInt3(matrix3);
+Console.WriteLine("Транспонирование по горизонтали");
+TranMatrix(matrix3);
+PrintMatrixInt3(matrix3);
 Console.ReadLine();
 
 /*--------------------------------------------*/
